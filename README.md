@@ -1,0 +1,16 @@
+# INTEC_dropout_prediction
+Machine Learning model delevopment for identifying undergraduate students at risk of dropout using administrative, demographic, academic and socioeconomic data, with the aim to develop prevention plans.
+
+The use of Machine Learning to exploit administrative data within universities to predict and prevent the dropout of their students is increasingly common. INTEC currently has a mechanism for the early detection of students at risk of involuntary dropout, but it does not have instruments for the early detection of involuntary dropout. The present study seeks to create a Machine Learning model for INTEC that allows students to be identified at risk of dropout (especially voluntary) using administrative, demographic, academic and socioeconomic data, with the aim of being able to develop intervention plans with students at a higher level. of risk to contribute to the improvement of their performance and thus avoid their potential desertion. For this, the classification models of Machine Learning, Decision Trees and Random Forests were used; trained with biographical data, student registration data, admission test results, quarterly index, and academic evolution of students. 
+
+In general, the problem is divided into the creation of four models that identify students at risk of dropping out at different moments of their academic trajectory: the first model predicts students at risk of dropping out in their first year of studies using the data available at the time of your entry (biographical data, registration data and results of admissions tests); the second model predicts students at risk during the second year using data from the academic evolution in the first year, including the probability of dropping out estimated in the first model; the third model predicts students at risk during the third year using data from the academic evolution in the second year, including the probability of dropping out estimated in the second model; and the fourth model predicts students at risk after the third year using data from the academic evolution in the third year, including the probability of dropping out estimated in the third model. In the first round for this study, it was possible to obtain an accuracy of 88% for the first academic year, 85% for the second year, 91% for the third year, and 90% for the fourth year or after.
+
+This repository includes 2 main folders: 
+
+- Scripts: includes scripts for data preprocessing, data visualization, data preparation for modeling, data modeling using desicion trees and random forests, and model implementation to predict dropout risk for active students. Scripts are named according to the order they were created and applied. 
+
+- Final models: includes final decision trees models for 1st, 2nd, 3th, and 4th years. 
+
+The data used for developing these models is confidential cannot be made public. For the firts year model, a dataset with 19 features and 13k observations was used, which includes demographic data and admissin test results data (e.g. age, sex, nationality, etc.). For 2nd, 3th and 4th year models, a compilation of 255 features was used, which was generated using quarterly data on academic evolution. 
+
+![image](https://user-images.githubusercontent.com/61837894/232613459-eea545dd-085b-47ab-9fd4-f5623a3e8c78.png)
